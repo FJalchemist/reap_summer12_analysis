@@ -1,9 +1,9 @@
-import sys, numpy as np
+import sys
 from utils.read_csv import read_csv_by_column
 from scipy.stats import ttest_1samp, ttest_ind
 
 if len(sys.argv) != 3:
-    sys.exit("usage: python [paired/unpaired] t_test.py ***.csv")
+    sys.exit("usage: python t_test.py [paired/unpaired] ***.csv")
 
 """
 Let's say we only compare two data values at a time right now.

@@ -4,5 +4,9 @@ a = np.array([1, 2, 3])
 b = np.array([2, 3, 4])
 
 c = np.subtract(a,b)
-print np.shape(c)
+
+c = np.ndarray(shape = (2,3))
+c[0] = a
+c[1] = b
+
 print c
